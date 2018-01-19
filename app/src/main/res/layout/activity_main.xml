@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.linearbd.boommenuexperiment.MainActivity">
+
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bmb_buttonEnum="simpleCircle"
+        />
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/bmb"
+        app:bmb_use3DTransformAnimation="@bool/default_bmb_use3DTransformAnimation"
+        app:bmb_buttonEnum="simpleCircle"
+        app:bmb_piecePlaceEnum="piecePlace_dot_9_1"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_9_1"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ham Button"
+            android:id="@+id/btn_ham"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom Position"
+            android:layout_below="@+id/btn_ham"
+            android:id="@+id/btn_custom_position"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
